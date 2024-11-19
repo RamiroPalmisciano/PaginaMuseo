@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museo Interactivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Museo Interactivo</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#exposiciones">Gestión de Exposiciones</a></li>
+        <li><a href="#visitas">Visitas Guiadas</a></li>
+        <li><a href="#simulacion">Simulación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+      <h2>Bienvenido al Museo Interactivo</h2>
+      <p>Descubre nuestras exposiciones y disfruta de una experiencia inclusiva y enriquecedora.</p>
+      <img src="museo.jpg" alt="Imagen del museo" />
+    </section>
+
+    <!-- Gestión de Exposiciones -->
+    <section id="exposiciones">
+      <h2>Gestión de Exposiciones</h2>
+      <form id="form-exposicion">
+        <label for="nombre-exposicion">Nombre de la Exposición:</label>
+        <input type="text" id="nombre-exposicion" required>
+        
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" required></textarea>
+        
+        <button type="submit">Guardar</button>
+      </form>
+      <div id="lista-exposiciones"></div>
+    </section>
+
+    <!-- Generación de Visitas Guiadas -->
+    <section id="visitas">
+      <h2>Generar Visitas Guiadas</h2>
+      <form id="form-visitas">
+        <label for="nombre-ruta">Nombre de la Ruta:</label>
+        <input type="text" id="nombre-ruta" required>
+
+        <label for="idioma">Idioma:</label>
+        <select id="idioma">
+          <option value="es">Español</option>
+          <option value="en">Inglés</option>
+        </select>
+
+        <button type="submit">Crear Ruta</button>
+      </form>
+      <div id="lista-visitas"></div>
+    </section>
+
+    <!-- Simulación de Puntos Inteligentes -->
+    <section id="simulacion">
+      <h2>Simulación de Puntos Inteligentes</h2>
+      <button id="activar-simulacion">Activar Simulación</button>
+      <div id="notificaciones"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Museo Interactivo. Todos los derechos reservados.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+ 
